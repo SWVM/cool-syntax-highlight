@@ -1,0 +1,25 @@
+{
+    "name": "cool-syntax-highlight",
+    "displayName": "COOL-Syntax-Highlight",
+    "description": "syntax highlight for COOL",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cool",
+            "aliases": ["cool", "cool"],
+            "extensions": [".cl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cool",
+            "scopeName": "source.cool",
+            "path": "./syntaxes/cool.tmLanguage.json"
+        }]
+    }
+}
